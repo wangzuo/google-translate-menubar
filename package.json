@@ -1,0 +1,29 @@
+{
+  "name": "google-translate-menubar",
+  "version": "1.0.0",
+  "description": "google translate menubar",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wang Zuo",
+  "license": "ISC",
+  "dependencies": {
+    "menubar": "^2.0.14"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangzuo/google-translate-menubar.git"
+  },
+  "keywords": [
+    "google",
+    "translate",
+    "menubar"
+  ],
+  "bugs": {
+    "url": "https://github.com/wangzuo/google-translate-menubar/issues"
+  },
+  "homepage": "https://github.com/wangzuo/google-translate-menubar#readme"
+}
