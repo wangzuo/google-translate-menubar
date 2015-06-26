@@ -4,7 +4,7 @@ window.location.href = 'https://translate.google.com/m/translate';
 ```
 ### Installation
 ``` sh
-npm install electron-prebuilt -g
+npm install
 npm start
 ```
 ### License
