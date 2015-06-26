@@ -4,7 +4,7 @@
   "description": "google translate menubar",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "./node_modules/electron-prebuilt/cli.js .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Wang Zuo",
@@ -12,7 +12,9 @@
   "dependencies": {
     "menubar": "^2.0.14"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-prebuilt": "^0.28.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangzuo/google-translate-menubar.git"
