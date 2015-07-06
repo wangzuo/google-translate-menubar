@@ -1,11 +1,9 @@
 # google-translate-menubar
-```javascript
-window.location.href = 'https://translate.google.com/m/translate';
-```
 ### Installation
 ``` sh
 npm install
-npm start
+npm start # development
+npm run build # application package for mac
 ```
 ### License
 ISC
