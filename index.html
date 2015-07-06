@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, webview {
+  height: 100%;
+}
+
+.toolbar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+span {
+  line-height: 30px;
+  cursor: pointer;
+}
+</style>
 <body>
-<script>
-window.location.href = 'https://translate.google.com/m/translate';
-</script>
+  <webview src="https://translate.google.com/m/translate"></webview>
+  <div class="toolbar">
+    <span id="quit-btn">Quit</span>
+  </div>
+  <script>var app = require('./app');</script>
 </body>
 </html>
