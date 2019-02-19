@@ -2,13 +2,11 @@ var path = require('path');
 var events = require('events');
 var fs = require('fs');
 var electron = require('electron');
+var Positioner = require('electron-positioner');
 
 var app = electron.app;
 var Tray = electron.Tray;
 var BrowserWindow = electron.BrowserWindow;
-
-var extend = require('extend');
-var Positioner = require('electron-positioner');
 
 module.exports = function create(opts) {
   if (typeof opts === 'undefined') opts = { dir: app.getAppPath() };
@@ -86,7 +84,7 @@ module.exports = function create(opts) {
         frame: false
       };
 
-      var winOpts = extend(defaults, opts);
+      var winOpts = Object.assign(defaults, opts);
       menubar.window = new BrowserWindow(winOpts);
 
       menubar.positioner = new Positioner(menubar.window);
