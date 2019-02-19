@@ -1,8 +1,8 @@
 var path = require('path');
 var events = require('events');
 var fs = require('fs');
-
 var electron = require('electron');
+
 var app = electron.app;
 var Tray = electron.Tray;
 var BrowserWindow = electron.BrowserWindow;

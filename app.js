@@ -1,7 +1,7 @@
-var ipc = require('ipc');
+const { ipcRenderer } = require('electron');
 
 function quit() {
-  ipc.send('quit');
+  ipcRenderer.send('quit');
 }
 
 var btn = document.getElementById('quit-btn');
