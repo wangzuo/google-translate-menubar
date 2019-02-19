@@ -1,15 +1,13 @@
-var menubar = require('menubar');
-var ipc = require('ipc');
+const { ipcMain } = require('electron');
+const menubar = require('./menubar');
 
-// create menubar
-var mb = menubar({
-	dir: __dirname,
-	width: 380,
-	height: 660,
-	icon: __dirname + '/icons/icon22.png'
+const mb = menubar({
+  dir: __dirname,
+  width: 380,
+  height: 660,
+  icon: __dirname + '/icons/icon22.png'
 });
 
-// handle quit signal
-ipc.on('quit', function() {
-	mb.app.quit();
+ipcMain.on('quit', function() {
+  mb.app.quit();
 });
